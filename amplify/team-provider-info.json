@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-thessiansound-dev-10221-authRole",
+            "UnauthRoleArn": "arn:aws:iam::964567763810:role/amplify-thessiansound-dev-10221-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::964567763810:role/amplify-thessiansound-dev-10221-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-thessiansound-dev-10221-deployment",
+            "UnauthRoleName": "amplify-thessiansound-dev-10221-unauthRole",
+            "StackName": "amplify-thessiansound-dev-10221",
+            "StackId": "arn:aws:cloudformation:us-east-1:964567763810:stack/amplify-thessiansound-dev-10221/6fbd8f90-bb60-11ea-9036-12f4ed1177e6",
+            "AmplifyAppId": "d1s753bg761uwk"
+        },
+        "categories": {
+            "auth": {
+                "thessiansoundea5610b4": {}
+            }
+        }
+    }
+}

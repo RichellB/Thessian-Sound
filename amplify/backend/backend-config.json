@@ -1,0 +1,17 @@
+{
+	"auth": {
+		"thessiansoundea5610b4": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	},
+	"storage": {
+		"BeatsAudio": {
+			"region": "us-east-1",
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

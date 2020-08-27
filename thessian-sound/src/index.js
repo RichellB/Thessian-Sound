@@ -3,10 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Provider} from 'react-redux';
+import {createStore, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk'
+import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from './rootReducer'
+
+import Amplify from 'aws-amplify';
+import config from './aws-exports';
+
+const store = createStore(rootReducer, composeWithDevTools(
+  applyMiddleware(thunk)
+))
+
+
+Amplify.configure(config)
 
 ReactDOM.render(
   <React.StrictMode>
+    <Provider store={store}>
+    <Router>
     <App />
+    </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
